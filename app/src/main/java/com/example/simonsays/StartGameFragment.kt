@@ -7,7 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_start_game.*
 
 
 class StartGameFragment : Fragment() {
@@ -28,22 +29,11 @@ class StartGameFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-    }
-
-
-    private fun showColor(view: ImageButton, on: Boolean){
-        if(on) view.background.alpha = 255
-        else view.background.alpha = 128
-    }
-
-    private fun reset(view: ImageButton){
-        for(button in this.buttons){
-            showColor(button, false)
+        val navController = this.findNavController()
+        start_game_button.setOnClickListener{
+            navController.navigate(R.id.action_startGameFragment_to_inGameFragment)
         }
-    }
-
-    private fun getChoices(){
 
     }
+
 }

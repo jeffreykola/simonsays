@@ -18,9 +18,8 @@
             android:id="@+id/red_button"
             android:layout_width="104dp"
             android:layout_height="135dp"
-            android:alpha="0.5"
             android:backgroundTint="#FFFFFF"
-            android:src="@drawable/ic_red_button"
+            android:src="@drawable/ic_red_button_dark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.109"
@@ -32,9 +31,8 @@
             android:id="@+id/green_button"
             android:layout_width="154dp"
             android:layout_height="130dp"
-            android:alpha="0.5"
             android:backgroundTint="#FFFFFF"
-            android:src="@drawable/ic_green_button"
+            android:src="@drawable/green_button_animate"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -47,10 +45,9 @@
             android:layout_width="171dp"
             android:layout_height="128dp"
             android:layout_marginEnd="16dp"
-            android:alpha="0.5"
             android:backgroundTint="#FFFFFF"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_yellow_button"
+            android:src="@drawable/yellow_button_animate"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.62"
@@ -62,18 +59,17 @@
             android:id="@+id/blue_button"
             android:layout_width="143dp"
             android:layout_height="122dp"
-            android:alpha="0.5"
             android:backgroundTint="#FFFFFF"
             android:maxHeight="100dp"
             android:minHeight="100dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_blue_button"
+            android:src="@drawable/blue_button_animate"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.427"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.706" />
+            app:layout_constraintVertical_bias="0.681" />
 
         <TextView
             android:id="@+id/app_title"
@@ -111,6 +107,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/blue_button"
             tools:text="1" />
+
 
     </android.support.constraint.ConstraintLayout>
 
